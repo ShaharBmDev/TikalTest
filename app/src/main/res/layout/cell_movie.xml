@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        tools:ignore="Overdraw">
+
+    <ImageView
+            android:id="@+id/iv_cellMovie_poster"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/tv_cellMovie_title"
+            app:layout_constraintDimensionRatio="w,1:1.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/movie_default_background" android:contentDescription="@string/poster" android:scaleType="centerCrop"/>
+    <View
+            android:layout_height="0dp"
+            android:id="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/iv_cellMovie_poster"
+            app:layout_constraintStart_toStartOf="@+id/iv_cellMovie_poster"
+            android:layout_width="0dp" app:layout_constraintEnd_toEndOf="@+id/iv_cellMovie_poster"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_cellMovie_poster"
+            android:background="@drawable/background_transparent_gradient_black"/>
+
+    <TextView
+            android:id="@+id/tv_cellMovie_releaseYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/cell_text_style"
+            android:text="@string/release_year"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:textAlignment="center"/>
+
+    <TextView
+            android:id="@+id/tv_cellMovie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            style="@style/cell_text_style"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/title"
+            app:layout_constraintBottom_toTopOf="@+id/tv_cellMovie_releaseYear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:lines="2" android:gravity="center"/>
+
+    <RatingBar
+            android:id="@+id/rtb_cellMovie_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            style="@style/RatingBar"
+            android:rating="3.6"
+            android:stepSize="0.1"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_cellMovie_poster"
+            app:layout_constraintStart_toStartOf="@+id/iv_cellMovie_poster" android:elevation="1dp"/>
+
+    <TextView
+            android:id="@+id/tv_cellMovie_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/rating_example"
+            style="@style/cell_text_style"
+            app:layout_constraintBottom_toBottomOf="@+id/rtb_cellMovie_rating"
+            app:layout_constraintEnd_toEndOf="@+id/iv_cellMovie_poster"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/rtb_cellMovie_rating"
+            app:layout_constraintTop_toTopOf="@+id/rtb_cellMovie_rating" android:elevation="1dp"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TikalTest</string>
+    <string name="out_of_ten_rating">%.1f/10</string>
+    <string name="poster">poster</string>
+    <string name="search">Search</string>
+    <string name="imdb">IMDB</string>
+    <string name="title">Title</string>
+    <string name="release_year">Release year</string>
+    <string name="rating_example">7.2/10s</string>
+    <string name="overview">Overview</string>
+    <string name="genres">Genres</string>
+    <string name="languages">Languages</string>
+    <string name="invalid_activity">Invalid Activity</string>
+    <string name="unknown_error">unknownError</string>
+    <string name="no_movie_selected">No movie selected</string>
+</resources>
