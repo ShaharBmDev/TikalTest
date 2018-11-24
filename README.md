@@ -15,5 +15,4 @@ The app is very basic but tries to show correct usage of Andriod architectural c
 * adding "infinity scroll" using android paging component.
 
 ### Screenshots
-===============
 Can be faound in the [Screenshots](https://github.com/ShaharBmDev/TikalTest/tree/master/Screenshots) folder.
